@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover underrated global travel destinations with authentic experiences, insider tips, and personalized itineraries. Explore hidden gems away from tourist crowds in 2025.">
+    <meta name="keywords" content="underrated travel destinations 2025, hidden gems global, off-the-beaten-path adventures, budget travel tips, authentic travel secrets, underrated spots Central Asia">
+    <title>Underrated Global Travel Destinations- Your Gateway to Hidden Travel Gems</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- SEO Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "DiscoverUnderrated.com",
+      "url": "https://discoverunderrated.com",
+      "description": "Explore underrated global travel destinations with in-depth guides, itineraries, and community insights for 2025.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://discoverunderrated.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Custom styles */
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1503794104616-c9e4fb2a3e8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        @media (max-width: 768px) {
+            .hero { height: 60vh; }
+        }
+        /* Dark mode */
+        .dark-mode { background-color: #1a1a1a; color: white; }
+        .dark-mode .bg-white { background-color: #2d3748 !important; color: #e2e8f0; }
+        .dark-mode .text-gray-800 { color: #e2e8f0; }
+        .dark-mode .text-gray-600 { color: #a0aec0; }
+        .dark-mode .bg-gray-100 { background-color: #4a5568; }
+        .dark-mode .bg-gray-800 { background-color: #1a202c; }
+        .dark-mode .border-gray-200 { border-color: #4a5568; }
+        .dark-mode .bg-gray-50 { background-color: #2d3748; }
+        /* Smooth scroll */
+        html { scroll-behavior: smooth; }
+        /* Drag and drop styles */
+        .dragging { opacity: 0.5; }
+        .drop-zone { border: 2px dashed #cbd5e0; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <a href="/" class="flex-shrink-0 flex items-center font-bold text-xl text-indigo-600">
+                        <i class="fas fa-compass mr-2"></i>DiscoverUnderrated.com
+                    </a>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="#home" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300">Home</a>
+                    <a href="#destinations" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300">Destinations</a>
+                    <a href="#blog" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300">Blog</a>
+                    <a href="#itineraries" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300">Itineraries</a>
+                    <a href="#community" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300">Community</a>
+                    <a href="#premium" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300">Premium</a>
+                    <a href="#about" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300">About</a>
+                </div>
+                <div class="flex items-center">
+                    <button id="dark-mode-toggle" class="p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100" aria-label="Toggle dark mode">🌙</button>
+                    <a href="#login" class="ml-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                        <i class="fas fa-user mr-2"></i>Login / Subscribe
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero mt-16">
+        <div class="text-center max-w-3xl mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Hey there, fellow wanderluster!</h1>
+            <p class="text-xl mb-6">Tired of the same old tourist traps? Discover underrated global destinations with us – updated for 2025 adventures.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#destinations" class="px-6 py-3 bg-white text-indigo-600 font-semibold rounded-md hover:bg-gray-100 transition duration-300">
+                    <i class="fas fa-map-marked-alt mr-2"></i>Explore Destinations
+                </a>
+                <a href="#blog" class="px-6 py-3 border-2 border-white text-white font-semibold rounded-md hover:bg-white hover:text-indigo-600 transition duration-300">
+                    <i class="fas fa-book-open mr-2"></i>Read Stories
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Underrated Global Travel Destinations for 2025</h2>
+            <p class="text-center mb-12 text-gray-600">Based on the latest travel insights, here are hidden gems offering unique, crowd-free experiences. Filter to find your perfect spot!</p>
+            
+            <!-- Advanced Search Filters -->
+            <div class="mb-8 flex flex-wrap gap-4 justify-center">
+                <input type="text" id="search-input" placeholder="Search by name or keyword..." class="p-3 border rounded-md flex-1 min-w-[200px] focus:ring-2 focus:ring-indigo-500">
+                <select id="region-filter" class="p-3 border rounded-md">
+                    <option value="">All Regions</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="South America">South America</option>
+                    <option value="Caucasus">Caucasus</option>
+                </select>
+                <select id="activity-filter" class="p-3 border rounded-md">
+                    <option value="">All Activities</option>
+                    <option value="Hiking">Hiking</option>
+                    <option value="Culture">Culture</option>
+                    <option value="Beaches">Beaches</option>
+                    <option value="Adventure">Adventure</option>
+                </select>
+                <div class="flex items-center gap-2 bg-green-50 p-3 rounded-md">
+                    <input type="checkbox" id="sustainability-filter" class="h-5 w-5 text-green-600">
+                    <label for="sustainability-filter" class="text-gray-700">Eco-Friendly Only</label>
+                </div>
+            </div>
+            
+            <!-- Destinations Table -->
+            <div class="overflow-x-auto rounded-lg shadow-md">
+                <table class="min-w-full bg-white border border-gray-200">
+                    <thead>
+                        <tr>
+                            <th class="px-6 py-3 border-b-2 border-gray-200 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Destination</th>
+                            <th class="px-6 py-3 border-b-2 border-gray-200 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Country/Region</th>
+                            <th class="px-6 py-3 border-b-2 border-gray-200 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Why Underrated</th>
+                            <th class="px-6 py-3 border-b-2 border-gray-200 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Key Attractions</th>
+                            <th class="px-6 py-3 border-b-2 border-gray-200 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Best Time to Visit</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <tr data-region="Asia" data-activity="Culture" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">Bukhara</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Uzbekistan</td>
+                            <td class="px-6 py-4 text-gray-600">Often overshadowed by Samarkand, it's a Silk Road gem with fewer crowds.</td>
+                            <td class="px-6 py-4 text-gray-600">Ancient mosques, madrasas, and bazaars; UNESCO-listed old town.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Spring (Mar-May) or Fall (Sep-Nov) for mild weather.</td>
+                        </tr>
+                        <tr data-region="Europe" data-activity="Hiking" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">Albania (e.g., Berat or Gjirokastër)</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Balkans</td>
+                            <td class="px-6 py-4 text-gray-600">Emerging post-communism, affordable and scenic, but skipped for Greece or Croatia.</td>
+                            <td class="px-6 py-4 text-gray-600">Ottoman architecture, beaches, mountains; hiking in the Albanian Alps.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Summer (Jun-Aug) for coastal vibes.</td>
+                        </tr>
+                        <tr data-region="Caucasus" data-activity="Culture" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">Georgia (Caucasus region)</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Eurasia</td>
+                            <td class="px-6 py-4 text-gray-600">Incredible food, wine, and history, but less visited than Europe proper.</td>
+                            <td class="px-6 py-4 text-gray-600">Tbilisi's old town, wine regions like Kakheti, Svaneti mountains.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">May-Oct for outdoor activities.</td>
+                        </tr>
+                        <tr data-region="South America" data-activity="Adventure" data-eco="false">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">Bolivia (e.g., Salar de Uyuni)</td>
+                            <td class="px-6 py-4 whitespace-nowrap">South America</td>
+                            <td class="px-6 py-4 text-gray-600">Vast landscapes and indigenous culture, bypassed for Peru or Brazil.</td>
+                            <td class="px-6 py-4 text-gray-600">Salt flats, Lake Titicaca, Amazon basin adventures.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Dry season (May-Oct).</td>
+                        </tr>
+                        <tr data-region="Caucasus" data-activity="Culture" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">Armenia</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Caucasus</td>
+                            <td class="px-6 py-4 text-gray-600">Ancient history and wine heritage, but overlooked amid regional tensions.</td>
+                            <td class="px-6 py-4 text-gray-600">Monasteries like Tatev, Yerevan's markets, Areni wine caves.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Spring or Fall for festivals.</td>
+                        </tr>
+                        <tr data-region="Asia" data-activity="Hiking" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">Kyrgyzstan</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Central Asia</td>
+                            <td class="px-6 py-4 text-gray-600">Nomadic culture and epic hikes, but remote and underpromoted.</td>
+                            <td class="px-6 py-4 text-gray-600">Issyk-Kul Lake, yurt stays, Tian Shan mountains.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Summer (Jun-Sep) for trekking.</td>
+                        </tr>
+                        <tr data-region="South America" data-activity="Adventure" data-eco="false">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">Colombia (e.g., San Gil or Tayrona)</td>
+                            <td class="px-6 py-4 whitespace-nowrap">South America</td>
+                            <td class="px-6 py-4 text-gray-600">Recovering image, with diverse ecosystems, but still seen as risky by some.</td>
+                            <td class="px-6 py-4 text-gray-600">Coffee plantations, Caribbean beaches, adventure sports.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Dec-Mar for dry weather.</td>
+                        </tr>
+                        <tr data-region="Asia" data-activity="Culture" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">Laos</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Southeast Asia</td>
+                            <td class="px-6 py-4 text-gray-600">Serene temples and rivers, skipped for Thailand or Vietnam.</td>
+                            <td class="px-6 py-4 text-gray-600">Luang Prabang's UNESCO sites, Mekong cruises, waterfalls.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Nov-Feb for cooler temps.</td>
+                        </tr>
+                        <tr data-region="Europe" data-activity="Hiking" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">Kotor</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Montenegro</td>
+                            <td class="px-6 py-4 text-gray-600">Stunning fjords and medieval towns, less hyped than Dubrovnik.</td>
+                            <td class="px-6 py-4 text-gray-600">Bay of Kotor hikes, old city walls, boat tours.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">May-Jun or Sep-Oct to avoid crowds.</td>
+                        </tr>
+                        <tr data-region="Europe" data-activity="Culture" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">Transylvania</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Romania</td>
+                            <td class="px-6 py-4 text-gray-600">Mythic castles and rural charm, beyond Dracula lore but underrated in Europe.</td>
+                            <td class="px-6 py-4 text-gray-600">Bran Castle, Saxon villages, Carpathian hikes.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Summer for festivals.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Interactive Map -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-semibold mb-4 text-center">Interactive World Map of Hidden Gems</h3>
+                <div id="map" class="h-96 rounded-lg shadow-md bg-gray-200 flex items-center justify-center">
+                    <p class="text-gray-600">Interactive map would appear here with a valid Google Maps API key</p>
+                </div>
+                <p class="text-center mt-2 text-sm text-gray-500">Note: To enable the interactive map, add a valid Google Maps API key</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Our Travel Stories & Guides</h2>
+            <p class="text-center mb-12 text-gray-600">Real tales from the road, packed with tips for your next underrated escape. Updated September 2025.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1: Bukhara -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1503794104616-c9e4fb2a3e8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vibrant market stalls in Bukhara at dusk, showcasing Silk Road architecture" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Why Bukhara in Uzbekistan Should Be Your Next Adventure</h3>
+                        <p class="text-gray-600 mb-4">Picture this: You're wandering through a labyrinth of ancient minarets and bustling bazaars, the air thick with the scent of spices and fresh bread. That's Bukhara for you – a Silk Road city that's flown under the radar for way too long.</p>
+                        <a href="#full-article-bukhara" class="text-indigo-600 hover:underline font-medium">Read Full Guide →</a>
+                    </div>
+                </article>
+                <!-- Article 2: Berat -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1687315126793-36d1d4f5f4e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="White-washed houses in Berat, Albania overlooking the river at sunset" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Off-the-Beaten-Path in Albania: Berat's White-Washed Wonders</h3>
+                        <p class="text-gray-600 mb-4">Albania? Yeah, I get it – it's not the first place that pops into your head for a Euro trip. But Berat, with its Ottoman houses clinging to hillsides like something out of a fairy tale, changed my mind forever.</p>
+                        <a href="#full-article-berat" class="text-indigo-600 hover:underline font-medium">Read Full Guide →</a>
+                    </div>
+                </article>
+                <!-- Article 3: Georgia -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7e2e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Old town streets in Tbilisi, Georgia, with colorful balconies and historic buildings" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Georgia's Caucasus Magic: Why Tbilisi and Beyond Deserve Your 2025 Trip</h3>
+                        <p class="text-gray-600 mb-4">Ah, Georgia – not the US state, but that tucked-away Eurasian powerhouse where mountains meet ancient wine cellars. I first landed in Tbilisi on a whim, and it hooked me with its blend of Soviet grit and fairy-tale charm.</p>
+                        <a href="#full-article-georgia" class="text-indigo-600 hover:underline font-medium">Read Full Guide →</a>
+                    </div>
+                </article>
+                <!-- Article 4: Bolivia -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Salar de Uyuni salt flats in Bolivia at sunrise, reflecting the sky" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Bolivia's Salt Flats: An Otherworldly Escape from the Ordinary</h3>
+                        <p class="text-gray-600 mb-4">Imagine driving across a mirror of salt that stretches to infinity – that's Salar de Uyuni, and it's as surreal as it sounds. I jeeped through it during the rainy season, and the reflections made me question reality.</p>
+                        <a href="#full-article-bolivia" class="text-indigo-600 hover:underline font-medium">Read Full Guide →</a>
+                    </div>
+                </article>
+                <!-- Article 5: Armenia -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1588880365064-e3f4e8f7e67b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ancient monasteries in Armenia's rugged landscape" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Armenia: Wine, Monasteries, and Untold Stories</h3>
+                        <p class="text-gray-600 mb-4">Armenia feels like a time capsule – monasteries carved into cliffs, wines predating Noah's Ark. I got lost in Yerevan's markets, sipping cognac with locals who shared tales of resilience.</p>
+                        <a href="#full-article-armenia" class="text-indigo-600 hover:underline font-medium">Read Full Guide →</a>
+                    </div>
+                </article>
+                <!-- Article 6: Kyrgyzstan -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Yurts by Issyk-Kul Lake in Kyrgyzstan" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Kyrgyzstan: Nomad Life and Mountain Highs</h3>
+                        <p class="text-gray-600 mb-4">Horseback riding through alpine meadows, staying in yurts by turquoise lakes – Kyrgyzstan is adventure unfiltered. I bonded with eagle hunters; it's raw and real.</p>
+                        <a href="#full-article-kyrgyzstan" class="text-indigo-600 hover:underline font-medium">Read Full Guide →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Itineraries Section -->
+    <section id="itineraries" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Build Your Custom Itinerary</h2>
+            <p class="text-center mb-12 text-gray-600">Drag, drop, and plan your dream trip. Premium users unlock AI optimizations and sharing.</p>
+            
+            <!-- Itinerary Builder -->
+            <div id="itinerary-builder" class="bg-gray-100 p-6 rounded-lg min-h-[400px]">
+                <h3 class="text-xl font-semibold mb-4">Your Trip Plan</h3>
+                <ul id="itinerary-list" class="space-y-2 mb-4">
+                    <li class="p-3 bg-white rounded shadow cursor-move border" draggable="true">Day 1: Arrive in Bukhara - Explore bazaars</li>
+                    <li class="p-3 bg-white rounded shadow cursor-move border" draggable="true">Day 2: Visit ancient mosques and madrasas</li>
+                    <li class="p-3 bg-white rounded shadow cursor-move border" draggable="true">Day 3: Day trip to desert for camel trek</li>
+                </ul>
+                <div class="mt-4 flex gap-2">
+                    <input type="text" id="new-day" placeholder="Add a new day..." class="flex-1 p-2 border rounded focus:ring-2 focus:ring-indigo-500">
+                    <button id="add-day" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition duration-300">
+                        <i class="fas fa-plus mr-1"></i>Add
+                    </button>
+                </div>
+                <div class="mt-4 flex gap-2">
+                    <button id="save-itinerary" class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition duration-300">
+                        <i class="fas fa-save mr-1"></i>Save Itinerary
+                    </button>
+                    <button id="clear-itinerary" class="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300">
+                        <i class="fas fa-trash mr-1"></i>Clear All
+                    </button>
+                </div>
+                <p class="mt-4 text-sm text-gray-500">Export to calendar or share with friends (Premium).</p>
+            </div>
+            
+            <!-- Sustainability Tracker -->
+            <div class="mt-12 bg-green-50 p-6 rounded-lg">
+                <h3 class="text-2xl font-semibold mb-4">Sustainability Tracker</h3>
+                <p class="text-gray-600 mb-4">Estimate your trip's carbon footprint and get green tips.</p>
+                <div class="flex flex-col md:flex-row gap-4">
+                    <input type="number" id="flight-distance" placeholder="Flight distance (km)" class="p-2 border rounded flex-1 focus:ring-2 focus:ring-green-500">
+                    <select id="transport-type" class="p-2 border rounded flex-1 focus:ring-2 focus:ring-green-500">
+                        <option value="flight">Flight</option>
+                        <option value="train">Train</option>
+                        <option value="car">Car</option>
+                        <option value="bus">Bus</option>
+                    </select>
+                    <button id="calculate-footprint" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition duration-300">Calculate</button>
+                </div>
+                <div id="footprint-result" class="mt-4 p-3 bg-white rounded text-center hidden">
+                    Your estimated footprint: <span id="footprint-value"></span> - <span id="footprint-tip"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Join Our Traveler Community</h2>
+            <p class="text-center mb-12 text-gray-600">Share photos, tips, and connect with like-minded explorers. Premium for private forums.</p>
+            
+            <!-- Simple Forum Placeholder with Comments -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-4">Recent Posts</h3>
+                <div id="forum-posts" class="space-y-4 mb-6">
+                    <div class="p-4 border rounded bg-gray-50">
+                        <p class="font-medium">Sarah T. on Bukhara: "Loved the chai houses! Pro tip: Try the plov at night markets."</p>
+                        <p class="text-sm text-gray-500">September 20, 2025 • 12 likes</p>
+                    </div>
+                    <div class="p-4 border rounded bg-gray-50">
+                        <p class="font-medium">Mike R. on Georgia: "Wine tour in Kakheti was life-changing. Anyone else been?"</p>
+                        <p class="text-sm text-gray-500">September 18, 2025 • 8 likes</p>
+                    </div>
+                    <div class="p-4 border rounded bg-gray-50">
+                        <p class="font-medium">Lena K. on Albania: "Just returned from Berat - the castle views at sunset are unreal!"</p>
+                        <p class="text-sm text-gray-500">September 15, 2025 • 15 likes</p>
+                    </div>
+                </div>
+                <form id="forum-form" class="mt-6 flex gap-2">
+                    <input type="text" id="forum-input" placeholder="Share your story..." class="flex-1 p-2 border rounded focus:ring-2 focus:ring-indigo-500" required>
+                    <button type="submit" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition duration-300">Post</button>
+                </form>
+                <p class="mt-4 text-sm text-gray-500 italic">Premium members get unlimited posts and direct messaging.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section id="premium" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Unlock Premium for the Full Experience</h2>
+            <p class="text-center mb-12 text-gray-600">$9.99/month – Ad-free, exclusive guides, and more.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-indigo-50 p-6 rounded-lg text-center hover:shadow-md transition duration-300">
+                    <i class="fas fa-robot text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Personalized Recommendations</h3>
+                    <p class="text-gray-600">AI quizzes tailor itineraries to you.</p>
+                </div>
+                <div class="bg-indigo-50 p-6 rounded-lg text-center hover:shadow-md transition duration-300">
+                    <i class="fas fa-download text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Exclusive Downloads & VR Tours</h3>
+                    <p class="text-gray-600">PDF guides, 360° views, offline maps.</p>
+                </div>
+                <div class="bg-indigo-50 p-6 rounded-lg text-center hover:shadow-md transition duration-300">
+                    <i class="fas fa-percentage text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Booking Perks</h3>
+                    <p class="text-gray-600">10% off affiliates + cashback.</p>
+                </div>
+                <div class="bg-indigo-50 p-6 rounded-lg text-center hover:shadow-md transition duration-300">
+                    <i class="fas fa-comments text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Unlimited AI Chatbot</h3>
+                    <p class="text-gray-600">Ask for real-time tips anytime.</p>
+                </div>
+                <div class="bg-indigo-50 p-6 rounded-lg text-center hover:shadow-md transition duration-300">
+                    <i class="fas fa-users text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Private Community Access</h3>
+                    <p class="text-gray-600">Forums, events, travel buddies.</p>
+                </div>
+                <div class="bg-indigo-50 p-6 rounded-lg text-center hover:shadow-md transition duration-300">
+                    <i class="fas fa-bell text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Newsletter Priority</h3>
+                    <p class="text-gray-600">Flash deals and insider alerts.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#subscribe" class="inline-block px-8 py-4 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 text-lg transition duration-300">
+                    <i class="fas fa-crown mr-2"></i>Subscribe Now – Start Exploring!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">About DiscoverUnderrated.com</h2>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">We're a team of passionate nomads on a mission to spotlight the world's hidden corners. Since 2024, we've shared authentic stories to help you travel deeper, cheaper, and greener. Join us in 2025 for more magic!</p>
+            <div class="text-center">
+                <a href="#contact" class="inline-flex items-center px-6 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300">
+                    <i class="fas fa-envelope mr-2"></i>Get in Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="/" class="flex items-center font-bold text-xl text-white">
+                        <i class="fas fa-compass mr-2"></i>DiscoverUnderrated.com
+                    </a>
+                    <p class="mt-2 text-gray-400">&copy; 2025 DiscoverUnderrated.com. All rights reserved.</p>
+                </div>
+                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-center md:text-left">
+                    <a href="#privacy" class="hover:text-gray-300 transition duration-300">Privacy Policy</a>
+                    <a href="#terms" class="hover:text-gray-300 transition duration-300">Terms of Service</a>
+                    <a href="#contact" class="hover:text-gray-300 transition duration-300">Contact Us</a>
+                    <div class="flex space-x-4 justify-center md:justify-start">
+                        <a href="#social" class="hover:text-gray-300 transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#social" class="hover:text-gray-300 transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#social" class="hover:text-gray-300 transition duration-300"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const toggle = document.getElementById('dark-mode-toggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const isDark = document.body.classList.contains('dark-mode');
+            toggle.textContent = isDark ? '☀️' : '🌙';
+            toggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+            // Save preference to localStorage
+            localStorage.setItem('darkMode', isDark);
+        });
+
+        // Check for saved dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+            toggle.textContent = '☀️';
+        }
+
+        // Advanced Search and Filters
+        const searchInput = document.getElementById('search-input');
+        const regionFilter = document.getElementById('region-filter');
+        const activityFilter = document.getElementById('activity-filter');
+        const sustainabilityFilter = document.getElementById('sustainability-filter');
+        const tableRows = document.querySelectorAll('#table-body tr');
+
+        function filterTable() {
+            const query = searchInput.value.toLowerCase();
+            const region = regionFilter.value;
+            const activity = activityFilter.value;
+            const eco = sustainabilityFilter.checked;
+
+            tableRows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                const rowRegion = row.dataset.region;
+                const rowActivity = row.dataset.activity;
+                const rowEco = row.dataset.eco;
+
+                const matchesSearch = text.includes(query);
+                const matchesRegion = !region || rowRegion === region;
+                const matchesActivity = !activity || rowActivity === activity;
+                const matchesEco = !eco || rowEco === 'true';
+
+                row.style.display = (matchesSearch && matchesRegion && matchesActivity && matchesEco) ? '' : 'none';
+            });
+        }
+
+        searchInput.addEventListener('input', filterTable);
+        regionFilter.addEventListener('change', filterTable);
+        activityFilter.addEventListener('change', filterTable);
+        sustainabilityFilter.addEventListener('change', filterTable);
+
+        // Itinerary Builder
+        const addDayBtn = document.getElementById('add-day');
+        const newDayInput = document.getElementById('new-day');
+        const itineraryList = document.getElementById('itinerary-list');
+        const saveItineraryBtn = document.getElementById('save-itinerary');
+        const clearItineraryBtn = document.getElementById('clear-itinerary');
+
+        // Drag and drop functionality
+        let draggedItem = null;
+
+        itineraryList.addEventListener('dragstart', (e) => {
+            if (e.target.tagName === 'LI') {
+                draggedItem = e.target;
+                setTimeout(() => e.target.classList.add('dragging'), 0);
+            }
+        });
+
+        itineraryList.addEventListener('dragend', (e) => {
+            if (e.target.tagName === 'LI') {
+                e.target.classList.remove('dragging');
+                draggedItem = null;
+            }
+        });
+
+        itineraryList.addEventListener('dragover', (e) => {
+            e.preventDefault();
+        });
+
+        itineraryList.addEventListener('drop', (e) => {
+            e.preventDefault();
+            if (draggedItem && e.target.tagName === 'LI') {
+                const afterElement = getDragAfterElement(itineraryList, e.clientY);
+                if (afterElement == null) {
+                    itineraryList.appendChild(draggedItem);
+                } else {
+                    itineraryList.insertBefore(draggedItem, afterElement);
+                }
+            }
+        });
+
+        function getDragAfterElement(container, y) {
+            const draggableElements = [...container.querySelectorAll('li:not(.dragging)')];
+            
+            return draggableElements.reduce((closest, child) => {
+                const box = child.getBoundingClientRect();
+                const offset = y - box.top - box.height / 2;
+                
+                if (offset < 0 && offset > closest.offset) {
+                    return { offset: offset, element: child };
+                } else {
+                    return closest;
+                }
+            }, { offset: Number.NEGATIVE_INFINITY }).element;
+        }
+
+        addDayBtn.addEventListener('click', () => {
+            const dayText = newDayInput.value.trim();
+            if (dayText) {
+                const li = document.createElement('li');
+                li.className = 'p-3 bg-white rounded shadow cursor-move border';
+                li.draggable = true;
+                li.textContent = `Day ${itineraryList.children.length + 1}: ${dayText}`;
+                itineraryList.appendChild(li);
+                newDayInput.value = '';
+                
+                // Add drag events to new item
+                li.addEventListener('dragstart', (e) => {
+                    draggedItem = e.target;
+                    setTimeout(() => e.target.classList.add('dragging'), 0);
+                });
+                
+                li.addEventListener('dragend', (e) => {
+                    e.target.classList.remove('dragging');
+                    draggedItem = null;
+                });
+            }
+        });
+
+        saveItineraryBtn.addEventListener('click', () => {
+            const itineraryItems = Array.from(itineraryList.children).map(item => item.textContent);
+            localStorage.setItem('savedItinerary', JSON.stringify(itineraryItems));
+            alert('Itinerary saved successfully!');
+        });
+
+        clearItineraryBtn.addEventListener('click', () => {
+            if (confirm('Are you sure you want to clear your itinerary?')) {
+                itineraryList.innerHTML = '';
+                localStorage.removeItem('savedItinerary');
+            }
+        });
+
+        // Load saved itinerary if exists
+        const savedItinerary = localStorage.getItem('savedItinerary');
+        if (savedItinerary) {
+            const items = JSON.parse(savedItinerary);
+            items.forEach(itemText => {
+                const li = document.createElement('li');
+                li.className = 'p-3 bg-white rounded shadow cursor-move border';
+                li.draggable = true;
+                li.textContent = itemText;
+                itineraryList.appendChild(li);
+                
+                // Add drag events to loaded items
+                li.addEventListener('dragstart', (e) => {
+                    draggedItem = e.target;
+                    setTimeout(() => e.target.classList.add('dragging'), 0);
+                });
+                
+                li.addEventListener('dragend', (e) => {
+                    e.target.classList.remove('dragging');
+                    draggedItem = null;
+                });
+            });
+        }
+
+        // Sustainability Calculator
+        const calculateBtn = document.getElementById('calculate-footprint');
+        const flightDistanceInput = document.getElementById('flight-distance');
+        const transportTypeSelect = document.getElementById('transport-type');
+        const footprintResult = document.getElementById('footprint-result');
+        const footprintValue = document.getElementById('footprint-value');
+        const footprintTip = document.getElementById('footprint-tip');
+
+        calculateBtn.addEventListener('click', () => {
+            const distance = parseInt(flightDistanceInput.value) || 0;
+            const transportType = transportTypeSelect.value;
+            
+            let footprint = 0;
+            let level = '';
+            let tip = '';
+            
+            // Calculate based on transport type
+            switch(transportType) {
+                case 'flight':
+                    footprint = (distance / 1000) * 0.25; // kg CO2 per km
+                    break;
+                case 'train':
+                    footprint = (distance / 1000) * 0.05;
+                    break;
+                case 'car':
+                    footprint = (distance / 1000) * 0.2;
+                    break;
+                case 'bus':
+                    footprint = (distance / 1000) * 0.08;
+                    break;
+            }
+            
+            // Determine level and tip
+            if (footprint < 50) {
+                level = 'Low';
+                tip = 'Great choice! Consider offsetting with tree planting.';
+            } else if (footprint < 200) {
+                level = 'Medium';
+                tip = 'Good effort! Try combining with train travel next time.';
+            } else {
+                level = 'High';
+                tip = 'Consider alternative transport or carbon offset programs.';
+            }
+            
+            footprintValue.textContent = `${level} (${footprint.toFixed(0)}kg CO2)`;
+            footprintTip.textContent = tip;
+            footprintResult.classList.remove('hidden');
+        });
+
+        // Forum functionality
+        const forumForm = document.getElementById('forum-form');
+        const forumInput = document.getElementById('forum-input');
+        const forumPosts = document.getElementById('forum-posts');
+
+        forumForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const postText = forumInput.value.trim();
+            
+            if (postText) {
+                const postDiv = document.createElement('div');
+                postDiv.className = 'p-4 border rounded bg-gray-50';
+                postDiv.innerHTML = `
+                    <p class="font-medium">You: "${postText}"</p>
+                    <p class="text-sm text-gray-500">Just now • 0 likes</p>
+                `;
+                
+                forumPosts.prepend(postDiv);
+                forumInput.value = '';
+                
+                // Scroll to the new post
+                postDiv.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Newsletter Signup Placeholder
+        console.log('Newsletter signup would integrate with Mailchimp or similar service');
+
+        // AI Chatbot Placeholder
+        console.log('Premium AI Chatbot: Ask me anything about travel!');
+    </script>
+</body>
+</html>
