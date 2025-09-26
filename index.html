@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover underrated global travel destinations with authentic experiences, insider tips, and personalized itineraries. Explore hidden gems away from tourist crowds in 2025.">
-    <meta name="keywords" content="underrated travel destinations 2025, hidden gems global, off-the-beaten-path adventures, budget travel tips, authentic travel secrets, underrated spots Central Asia">
-    <title>Underrated Global Travel Destinations- Your Gateway to Hidden Travel Gems</title>
+    <meta name="keywords" content="underrated travel destinations 2025, hidden gems global, off-the-beaten-path adventures, budget travel tips, authentic travel secrets, underrated spots Central Asia, emerging destinations 2025">
+    <title>DiscoverUnderrated.com - Your Gateway to Hidden Travel Gems</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -58,6 +58,42 @@
         /* Drag and drop styles */
         .dragging { opacity: 0.5; }
         .drop-zone { border: 2px dashed #cbd5e0; }
+        /* Responsive Table */
+        @media screen and (max-width: 768px) {
+            .responsive-table {
+                border: 0;
+            }
+            .responsive-table thead {
+                display: none;
+            }
+            .responsive-table tr {
+                display: block;
+                margin-bottom: 1rem;
+                border: 1px solid #e2e8f0;
+                border-radius: 0.5rem;
+                overflow: hidden;
+                background: white;
+            }
+            .responsive-table td {
+                display: block;
+                text-align: right;
+                padding: 0.75rem;
+                border-bottom: 1px solid #f7fafc;
+                position: relative;
+                padding-left: 50%;
+            }
+            .responsive-table td:before {
+                content: attr(data-label) ": ";
+                position: absolute;
+                left: 0.75rem;
+                width: calc(50% - 1.5rem);
+                white-space: nowrap;
+                font-weight: 600;
+            }
+            .responsive-table td:last-child {
+                border-bottom: 0;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -76,7 +112,6 @@
                     <a href="#blog" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300">Blog</a>
                     <a href="#itineraries" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300">Itineraries</a>
                     <a href="#community" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300">Community</a>
-                    <a href="#premium" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300">Premium</a>
                     <a href="#about" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300">About</a>
                 </div>
                 <div class="flex items-center">
@@ -111,17 +146,30 @@
             <h2 class="text-3xl font-bold text-center mb-8">Underrated Global Travel Destinations for 2025</h2>
             <p class="text-center mb-12 text-gray-600">Based on the latest travel insights, here are hidden gems offering unique, crowd-free experiences. Filter to find your perfect spot!</p>
             
+            <div class="bg-green-50 p-6 rounded-lg mb-8">
+                <h3 class="text-xl font-semibold mb-4 text-green-800">Travel Responsibly: A Promise to the Future</h3>
+                <p class="text-green-700 mb-4">When you hike a trail in the remote Fann Mountains or sip tea in a Svaneti homestay, you are touching a world that has existed long before you arrived and, with our care, will long after. Responsible travel is about leaving it not just as you found it, but with a little more hope.</p>
+                <ol class="text-green-700 space-y-2 mb-4">
+                    <li><strong>Leave Only Footprints, Take Only Memories (and Photos)</strong><br>Imagine the silence of a high-altitude lake like Gosaikunda, broken only by the wind. Now imagine that silence shattered by a plastic wrapper tangled in the shrubs. When we pack out every single piece of our waste, we are preserving that sacred silence for the next traveler. We are leaving the wildflowers for the bees, the clean water for the wildlife, and the untouched beauty for the soul who follows in our footsteps. We are not just cleaning up after ourselves; we are honoring the sanctity of the wild.</li>
+                    <li><strong>Be a Guest, Not a Tourist.</strong><br>In a village in Nagaland or a yurt camp in Kyrgyzstan, you are not in a theme park. You are in someone's home. The mountains are their backyard, the rivers their source of life. When you choose a local guide, eat a meal prepared by a family, or buy a handmade craft, you are not just spending money. You are saying, <em>"Your way of life is valuable. Your culture is worth preserving."</em> You are helping a community thrive on their own terms, ensuring that their children can find opportunity and pride in their heritage, rather than being forced to leave it behind.</li>
+                    <li><strong>Tread Lightly on the Earth and on Hearts.</strong><br>The path you walk is ancient. It has been worn by pilgrims, shepherds, and explorers for centuries. Walk it with respect. Speak in hushed tones. Observe local customs—cover your shoulders at a temple, remove your shoes before entering a home. These are not inconveniences; they are gestures of deep respect. You are a representative of all travelers who will come after you. The kindness and respect you show today will determine the welcome they receive tomorrow.</li>
+                    <li><strong>The Ripple Effect.</strong><br>Your choices create ripples. By refusing a plastic bottle and using a filter instead, you prevent one more piece of trash from polluting a trail. By staying on the marked path, you protect fragile soil from erosion. By sharing your story of how you traveled consciously, you inspire friends and family to do the same. You become part of a growing wave of people who believe that travel should heal the world, not harm it.</li>
+                </ol>
+                <p class="text-green-700 mb-4">Ultimately, we travel to these underrated places to find something we feel we’ve lost—a sense of wonder, of connection, of peace. The greatest way to thank these places for the gifts they give us is to ensure they remain vibrant, whole, and waiting for the next seeking heart.</p>
+                <p class="text-green-700 italic">It’s not just about being a good tourist. It’s about being a good ancestor to this beautiful, fragile planet.</p>
+            </div>
+            
             <!-- Advanced Search Filters -->
             <div class="mb-8 flex flex-wrap gap-4 justify-center">
-                <input type="text" id="search-input" placeholder="Search by name or keyword..." class="p-3 border rounded-md flex-1 min-w-[200px] focus:ring-2 focus:ring-indigo-500">
-                <select id="region-filter" class="p-3 border rounded-md">
+                <input type="text" id="search-input" placeholder="Search by name or keyword..." class="p-3 border rounded-md flex-1 min-w-[200px] focus:ring-2 focus:ring-indigo-500" aria-label="Search destinations">
+                <select id="region-filter" class="p-3 border rounded-md" aria-label="Filter by region">
                     <option value="">All Regions</option>
                     <option value="Asia">Asia</option>
                     <option value="Europe">Europe</option>
                     <option value="South America">South America</option>
                     <option value="Caucasus">Caucasus</option>
                 </select>
-                <select id="activity-filter" class="p-3 border rounded-md">
+                <select id="activity-filter" class="p-3 border rounded-md" aria-label="Filter by activity">
                     <option value="">All Activities</option>
                     <option value="Hiking">Hiking</option>
                     <option value="Culture">Culture</option>
@@ -129,14 +177,14 @@
                     <option value="Adventure">Adventure</option>
                 </select>
                 <div class="flex items-center gap-2 bg-green-50 p-3 rounded-md">
-                    <input type="checkbox" id="sustainability-filter" class="h-5 w-5 text-green-600">
+                    <input type="checkbox" id="sustainability-filter" class="h-5 w-5 text-green-600" aria-label="Eco-friendly only">
                     <label for="sustainability-filter" class="text-gray-700">Eco-Friendly Only</label>
                 </div>
             </div>
             
             <!-- Destinations Table -->
             <div class="overflow-x-auto rounded-lg shadow-md">
-                <table class="min-w-full bg-white border border-gray-200">
+                <table class="responsive-table min-w-full bg-white border border-gray-200">
                     <thead>
                         <tr>
                             <th class="px-6 py-3 border-b-2 border-gray-200 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Destination</th>
@@ -144,6 +192,7 @@
                             <th class="px-6 py-3 border-b-2 border-gray-200 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Why Underrated</th>
                             <th class="px-6 py-3 border-b-2 border-gray-200 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Key Attractions</th>
                             <th class="px-6 py-3 border-b-2 border-gray-200 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Best Time to Visit</th>
+                            <th class="px-6 py-3 border-b-2 border-gray-200 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">2025 Highlights</th>
                         </tr>
                     </thead>
                     <tbody id="table-body">
@@ -152,70 +201,136 @@
                             <td class="px-6 py-4 whitespace-nowrap">Uzbekistan</td>
                             <td class="px-6 py-4 text-gray-600">Often overshadowed by Samarkand, it's a Silk Road gem with fewer crowds.</td>
                             <td class="px-6 py-4 text-gray-600">Ancient mosques, madrasas, and bazaars; UNESCO-listed old town.</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Spring (Mar-May) or Fall (Sep-Nov) for mild weather.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">Spring (Mar-May) or Fall (Sep-Nov) for mild weather.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">First Bukhara Biennial in September, focusing on crafts.</td>
                         </tr>
                         <tr data-region="Europe" data-activity="Hiking" data-eco="true">
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">Albania (e.g., Berat or Gjirokastër)</td>
-                            <td class="px-6 py-4 whitespace-nowrap">Balkans</td>
-                            <td class="px-6 py-4 text-gray-600">Emerging post-communism, affordable and scenic, but skipped for Greece or Croatia.</td>
-                            <td class="px-6 py-4 text-gray-600">Ottoman architecture, beaches, mountains; hiking in the Albanian Alps.</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Summer (Jun-Aug) for coastal vibes.</td>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">Albania (e.g., Berat or Gjirokastër)</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">Balkans</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">Emerging post-communism, affordable and scenic, but skipped for Greece or Croatia.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">Ottoman architecture, beaches, mountains; hiking in the Albanian Alps.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">Summer (Jun-Aug) for coastal vibes.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">Vjosa Wild River National Park ecotourism growth.</td>
                         </tr>
                         <tr data-region="Caucasus" data-activity="Culture" data-eco="true">
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">Georgia (Caucasus region)</td>
-                            <td class="px-6 py-4 whitespace-nowrap">Eurasia</td>
-                            <td class="px-6 py-4 text-gray-600">Incredible food, wine, and history, but less visited than Europe proper.</td>
-                            <td class="px-6 py-4 text-gray-600">Tbilisi's old town, wine regions like Kakheti, Svaneti mountains.</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">May-Oct for outdoor activities.</td>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">Georgia (Caucasus region)</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">Eurasia</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">Incredible food, wine, and history, but less visited than Europe proper.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">Tbilisi's old town, wine regions like Kakheti, Svaneti mountains.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">May-Oct for outdoor activities.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">New cultural tours in Tbilisi and Kakheti.</td>
                         </tr>
                         <tr data-region="South America" data-activity="Adventure" data-eco="false">
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">Bolivia (e.g., Salar de Uyuni)</td>
-                            <td class="px-6 py-4 whitespace-nowrap">South America</td>
-                            <td class="px-6 py-4 text-gray-600">Vast landscapes and indigenous culture, bypassed for Peru or Brazil.</td>
-                            <td class="px-6 py-4 text-gray-600">Salt flats, Lake Titicaca, Amazon basin adventures.</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Dry season (May-Oct).</td>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">Bolivia (e.g., Salar de Uyuni)</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">South America</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">Vast landscapes and indigenous culture, bypassed for Peru or Brazil.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">Salt flats, Lake Titicaca, Amazon basin adventures.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">Dry season (May-Oct).</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">Expanded river safaris in Gran Chaco areas.</td>
                         </tr>
                         <tr data-region="Caucasus" data-activity="Culture" data-eco="true">
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">Armenia</td>
-                            <td class="px-6 py-4 whitespace-nowrap">Caucasus</td>
-                            <td class="px-6 py-4 text-gray-600">Ancient history and wine heritage, but overlooked amid regional tensions.</td>
-                            <td class="px-6 py-4 text-gray-600">Monasteries like Tatev, Yerevan's markets, Areni wine caves.</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Spring or Fall for festivals.</td>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">Armenia</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">Caucasus</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">Ancient history and wine heritage, but overlooked amid regional tensions.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">Monasteries like Tatev, Yerevan's markets, Areni wine caves.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">Spring or Fall for festivals.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">Vardavar festival and cave explorations.</td>
                         </tr>
                         <tr data-region="Asia" data-activity="Hiking" data-eco="true">
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">Kyrgyzstan</td>
-                            <td class="px-6 py-4 whitespace-nowrap">Central Asia</td>
-                            <td class="px-6 py-4 text-gray-600">Nomadic culture and epic hikes, but remote and underpromoted.</td>
-                            <td class="px-6 py-4 text-gray-600">Issyk-Kul Lake, yurt stays, Tian Shan mountains.</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Summer (Jun-Sep) for trekking.</td>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">Tajikistan (The Fann Mountains & Pamir Highway)</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">Central Asia</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">Overshadowed by neighboring Nepal and Pakistan, Tajikistan is a raw, high-altitude paradise for serious trekkers. It's home to some of the most dramatic and accessible mountain scenery in the world.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">Trek past stunning turquoise lakes like Iskanderkul and Alaudin Lakes in the Fann Mountains. For the ultimate adventure, drive and trek sections of the Pamir Highway, one of the world's highest roads, through remote villages with breathtaking views.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">Summer (Jun-Sep) for accessible passes.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">Enhanced community-based trekking programs.</td>
                         </tr>
-                        <tr data-region="South America" data-activity="Adventure" data-eco="false">
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">Colombia (e.g., San Gil or Tayrona)</td>
-                            <td class="px-6 py-4 whitespace-nowrap">South America</td>
-                            <td class="px-6 py-4 text-gray-600">Recovering image, with diverse ecosystems, but still seen as risky by some.</td>
-                            <td class="px-6 py-4 text-gray-600">Coffee plantations, Caribbean beaches, adventure sports.</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Dec-Mar for dry weather.</td>
+                        <tr data-region="Asia" data-activity="Hiking" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">Kyrgyzstan (Tian Shan Mountains)</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">Central Asia</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">Another Central Asian gem, Kyrgyzstan is a haven for nomadic culture and alpine trekking without the permits and crowds of the Himalayas.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">The Ala-Kul Lake trek near Karakol is a standout, offering a pass with views of a stunning glacial lake. You can also stay in yurts (felt tents) with local families through community-based tourism networks.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">Summer (Jun-Sep) for trekking.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">Expanded yurt stays and eagle hunting experiences.</td>
                         </tr>
-                        <tr data-region="Asia" data-activity="Culture" data-eco="true">
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">Laos</td>
-                            <td class="px-6 py-4 whitespace-nowrap">Southeast Asia</td>
-                            <td class="px-6 py-4 text-gray-600">Serene temples and rivers, skipped for Thailand or Vietnam.</td>
-                            <td class="px-6 py-4 text-gray-600">Luang Prabang's UNESCO sites, Mekong cruises, waterfalls.</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Nov-Feb for cooler temps.</td>
+                        <tr data-region="Caucasus" data-activity="Hiking" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">Georgia's Tusheti Region</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">Caucasus</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">While Georgia itself is becoming more popular, the Tusheti region remains extremely remote. It's only accessible by a thrilling 4x4 journey over a high mountain pass that is open only a few months of the year (June-September).</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">Explore ancient stone watchtowers, shepherd trails, and villages that feel frozen in time. The Omalo to Shatili trek is a classic multi-day journey through pristine valleys.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">Summer (Jun-Sep) for open passes.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">New guided historical treks with local shepherds.</td>
+                        </tr>
+                        <tr data-region="Asia" data-activity="Hiking" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">Taiwan's East Coast & Taroko Gorge</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">East Asia</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">Most visitors stick to Taipei and the west coast. The east coast, specifically Hualien County, offers some of the most dramatic coastal and mountain hiking in Asia.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">Explore the marble-walled cliffs of Taroko Gorge on well-maintained trails like the Zhuilu Old Trail (which requires a permit). Further south, the East Rift Valley offers quieter trails through rice paddies and toward the coast.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">Spring (Mar-May) or Fall (Sep-Nov) for mild weather.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">Expanded permit-free trails and eco-hikes.</td>
+                        </tr>
+                        <tr data-region="Asia" data-activity="Hiking" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">Nagaland, India</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">South Asia</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">Tucked away in India's remote northeast, Nagaland is culturally and geographically distinct from the rest of the country. It's famous for its vibrant indigenous tribes and lush, rolling hills.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">Trek between tribal villages, experiencing unique cultures and hospitality. The Dzukou Valley trek, on the border with Manipur, is particularly famous for its sea of wild flowers and emerald landscapes.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">October for flower blooms.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">Cultural immersion festivals with tribal hikes.</td>
                         </tr>
                         <tr data-region="Europe" data-activity="Hiking" data-eco="true">
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">Kotor</td>
-                            <td class="px-6 py-4 whitespace-nowrap">Montenegro</td>
-                            <td class="px-6 py-4 text-gray-600">Stunning fjords and medieval towns, less hyped than Dubrovnik.</td>
-                            <td class="px-6 py-4 text-gray-600">Bay of Kotor hikes, old city walls, boat tours.</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">May-Jun or Sep-Oct to avoid crowds.</td>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">The Azores, Portugal (São Miguel & Flores)</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">Europe</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">While technically in Europe (in the mid-Atlantic), the Azores are a perfect underrated destination for hikers. They offer a unique blend of volcanic landscapes, crater lakes, and hydrangea-lined trails without the crowds of mainland Europe's popular spots.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">On São Miguel, hike the Sete Cidades trail for iconic twin lake views. The island of Flores is a remote paradise with waterfalls cascading down cliff sides into the ocean.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">Summer (Jun-Sep) for dry trails.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">New volcanic trail networks and whale-watching combos.</td>
+                        </tr>
+                        <tr data-region="South America" data-activity="Adventure" data-eco="false">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">Colombia (e.g., San Gil or Tayrona)</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">South America</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">Recovering image, with diverse ecosystems, but still seen as risky by some.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">Coffee plantations, Caribbean beaches, adventure sports.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">Dec-Mar for dry weather.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">Pacific Coast whale watching.</td>
+                        </tr>
+                        <tr data-region="Asia" data-activity="Culture" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">Laos</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">Southeast Asia</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">Serene temples and rivers, skipped for Thailand or Vietnam.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">Luang Prabang's UNESCO sites, Mekong cruises, waterfalls.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">Nov-Feb for cooler temps.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">Lonely Planet Best in Travel for authenticity.</td>
+                        </tr>
+                        <tr data-region="Europe" data-activity="Hiking" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">Kotor</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">Montenegro</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">Stunning fjords and medieval towns, less hyped than Dubrovnik.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">Bay of Kotor hikes, old city walls, boat tours.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">May-Jun or Sep-Oct to avoid crowds.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">Emerging Balkan tourism with fjord views.</td>
                         </tr>
                         <tr data-region="Europe" data-activity="Culture" data-eco="true">
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">Transylvania</td>
-                            <td class="px-6 py-4 whitespace-nowrap">Romania</td>
-                            <td class="px-6 py-4 text-gray-600">Mythic castles and rural charm, beyond Dracula lore but underrated in Europe.</td>
-                            <td class="px-6 py-4 text-gray-600">Bran Castle, Saxon villages, Carpathian hikes.</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-gray-600">Summer for festivals.</td>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">Transylvania</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">Romania</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">Mythic castles and rural charm, beyond Dracula lore but underrated in Europe.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">Bran Castle, Saxon villages, Carpathian hikes.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">Summer for festivals.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">Affordable with Roman and Ottoman remnants.</td>
+                        </tr>
+                        <tr data-region="Asia" data-activity="Adventure" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">Kazakhstan</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">Central Asia</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">Vast steppes and modern cities, overlooked for neighbors.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">Almaty mountains, Astana architecture, nomadic heritage.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">Summer for festivals.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">Lonely Planet pick for cultural diversity.</td>
+                        </tr>
+                        <tr data-region="South America" data-activity="Culture" data-eco="true">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium" data-label="Destination">Veracruz State</td>
+                            <td class="px-6 py-4 whitespace-nowrap" data-label="Country/Region">Mexico</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Why Underrated">Less beach-focused than Caribbean, authentic culture.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="Key Attractions">El Tajin ruins, Xalapa city, Catemaco Lake.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-600" data-label="Best Time to Visit">Winter for mild weather.</td>
+                            <td class="px-6 py-4 text-gray-600" data-label="2025 Highlights">Underrated ruins without crowds.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -225,7 +340,7 @@
             <div class="mt-12">
                 <h3 class="text-2xl font-semibold mb-4 text-center">Interactive World Map of Hidden Gems</h3>
                 <div id="map" class="h-96 rounded-lg shadow-md bg-gray-200 flex items-center justify-center">
-                    <p class="text-gray-600">Interactive map would appear here with a valid Google Maps API key</p>
+                    <p class="text-gray-600">Interactive map would appear here with a valid Google Maps API key. <!-- Add <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> and JS init for production --></p>
                 </div>
                 <p class="text-center mt-2 text-sm text-gray-500">Note: To enable the interactive map, add a valid Google Maps API key</p>
             </div>
@@ -283,14 +398,134 @@
                         <a href="#full-article-armenia" class="text-indigo-600 hover:underline font-medium">Read Full Guide →</a>
                     </div>
                 </article>
-                <!-- Article 6: Kyrgyzstan -->
+                <!-- Article 6: Tajikistan -->
                 <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Yurts by Issyk-Kul Lake in Kyrgyzstan" class="w-full h-48 object-cover" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dramatic mountains in Tajikistan's Fann range" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Kyrgyzstan: Nomad Life and Mountain Highs</h3>
-                        <p class="text-gray-600 mb-4">Horseback riding through alpine meadows, staying in yurts by turquoise lakes – Kyrgyzstan is adventure unfiltered. I bonded with eagle hunters; it's raw and real.</p>
-                        <a href="#full-article-kyrgyzstan" class="text-indigo-600 hover:underline font-medium">Read Full Guide →</a>
+                        <h3 class="text-xl font-semibold mb-2">Tajikistan's Fann Mountains: Raw High-Altitude Paradise</h3>
+                        <p class="text-gray-600 mb-4">Towering peaks and turquoise lakes await in Tajikistan, a trekker's dream overshadowed by its neighbors. The Pamir Highway promises epic drives and hikes through untouched wilderness.</p>
+                        <a href="#full-article-tajikistan" class="text-indigo-600 hover:underline font-medium">Read Full Guide →</a>
                     </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Article Sections -->
+    <section id="full-articles" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Full Travel Guides</h2>
+            <div class="space-y-16">
+                <article id="full-article-bukhara">
+                    <h3 class="text-2xl font-semibold mb-4">Full Guide: Why Bukhara in Uzbekistan Should Be Your Next Adventure</h3>
+                    <p class="text-gray-600 mb-4">Bukhara, a key stop on the ancient Silk Road, is a living museum of history with over 2,000 years of architecture. Research from Travel + Leisure highlights its 2025 Bukhara Biennial in September, titled “Recipes for Broken Hearts,” which will feature interdisciplinary art, crafts, and folk traditions—perfect for cultural enthusiasts. It's underrated because, as per Indie Traveller, Central Asia remains underpromoted compared to Europe, offering crowd-free experiences. If you're concerned about safety, evidence from multiple sources leans toward Uzbekistan being stable for tourists, but always check U.S. State Department advisories.</p>
+                    <h4 class="text-xl font-semibold mb-2">Key Attractions</h4>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>Poi Kalyan Complex: Iconic minaret and mosque from the 12th century.</li>
+                        <li>Ark Fortress: Ancient citadel with museums.</li>
+                        <li>Lyabi-Hauz Ensemble: Peaceful pond surrounded by mulberry trees and teahouses.</li>
+                    </ul>
+                    <h4 class="text-xl font-semibold mb-2">Suggested Itinerary (3 Days)</h4>
+                    <ol class="list-decimal pl-5 mb-4">
+                        <li>Day 1: Arrive and explore the old town bazaars; try plov (rice dish) at a local spot.</li>
+                        <li>Day 2: Visit mosques and madrasas; join a craft workshop.</li>
+                        <li>Day 3: Desert day trip for camel trekking; evening Biennial event if in September.</li>
+                    </ol>
+                    <h4 class="text-xl font-semibold mb-2">Budget and Tips</h4>
+                    <p class="text-gray-600 mb-4">Expect $40-80 per day (accommodation $20-50, food $10-20). Fly into Tashkent and take a high-speed train (3 hours). Sustainability: Buy from local artisans to support heritage preservation; avoid plastic in bazaars. For all sides, some travelers note heat in summer, so spring/fall is ideal for comfort.</p>
+                    <p class="text-gray-600">Bukhara offers a blend of history and modernity—it's approachable for first-timers to Central Asia.</p>
+                </article>
+                <article id="full-article-berat">
+                    <h3 class="text-2xl font-semibold mb-4">Full Guide: Off-the-Beaten-Path in Albania: Berat's White-Washed Wonders</h3>
+                    <p class="text-gray-600 mb-4">Berat, known as the 'City of a Thousand Windows,' is a UNESCO site with Ottoman-era houses cascading down hillsides. According to Indie Traveller, Albania's tourism grew fastest from 2019-2024, but remains quiet due to its post-communism emergence—skipped for Greece. Research suggests it's safe, with low crime, but petty theft in crowds is a note from counter arguments. In 2025, the Vjosa Wild River National Park nearby boosts ecotourism.</p>
+                    <h4 class="text-xl font-semibold mb-2">Key Attractions</h4>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>Berat Castle: Panoramic views and Byzantine churches.</li>
+                        <li>Osum River Canyon: For rafting or hiking.</li>
+                        <li>Ethnographic Museum: Insight into Ottoman life.</li>
+                    </ul>
+                    <h4 class="text-xl font-semibold mb-2">Suggested Itinerary (3 Days)</h4>
+                    <ol class="list-decimal pl-5 mb-4">
+                        <li>Day 1: Wander Mangalem and Gorica quarters; sunset from castle.</li>
+                        <li>Day 2: Museum visits and local wine tasting.</li>
+                        <li>Day 3: Day trip to Gjirokastër or Vjosa for nature.</li>
+                    </ol>
+                    <h4 class="text-xl font-semibold mb-2">Budget and Tips</h4>
+                    <p class="text-gray-600 mb-4">$30-60/day (hostels $15-30, meals $5-15). Bus from Tirana (2 hours). Eco-tip: Use reusable bottles; support park conservation. Empathetic note: If history intrigues you but crowds deter, Berat's serenity is a win.</p>
+                    <p class="text-gray-600">Albania balances adventure and culture—ideal for budget explorers.</p>
+                </article>
+                <article id="full-article-georgia">
+                    <h3 class="text-2xl font-semibold mb-4">Full Guide: Georgia's Caucasus Magic: Why Tbilisi and Beyond Deserve Your 2025 Trip</h3>
+                    <p class="text-gray-600 mb-4">Georgia's blend of ancient history, world-class wine, and rugged mountains makes it a must-visit. Lonely Planet notes its rapid rise in 2025 lists, yet it remains less crowded than neighbors. Safety is generally high, though regional news should be monitored.</p>
+                    <h4 class="text-xl font-semibold mb-2">Key Attractions</h4>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>Tbilisi Old Town: Balconied houses and sulfur baths.</li>
+                        <li>Kakheti Wine Region: Tastings in qvevri cellars.</li>
+                        <li>Svaneti Towers: Medieval fortresses in alpine valleys.</li>
+                    </ul>
+                    <h4 class="text-xl font-semibold mb-2">Suggested Itinerary (5 Days)</h4>
+                    <ol class="list-decimal pl-5 mb-4">
+                        <li>Day 1-2: Tbilisi exploration and markets.</li>
+                        <li>Day 3: Wine tour in Kakheti.</li>
+                        <li>Day 4-5: Hike in Svaneti.</li>
+                    </ol>
+                    <h4 class="text-xl font-semibold mb-2">Budget and Tips</h4>
+                    <p class="text-gray-600 mb-4">$50-90/day. Direct flights to Tbilisi. Support local winemakers; use public transport.</p>
+                </article>
+                <article id="full-article-bolivia">
+                    <h3 class="text-2xl font-semibold mb-4">Full Guide: Bolivia's Salt Flats: An Otherworldly Escape from the Ordinary</h3>
+                    <p class="text-gray-600 mb-4">Salar de Uyuni's mirror-like expanse is iconic yet underrated compared to Machu Picchu. BBC Travel praises its 2025 eco-tours. Altitude sickness is a concern; acclimatize in La Paz.</p>
+                    <h4 class="text-xl font-semibold mb-2">Key Attractions</h4>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>Salt Flats: Hexagonal patterns and cacti islands.</li>
+                        <li>Colchani Salt Hotel: Unique lodging.</li>
+                        <li>Laguna Colorada: Flamingo-filled red lake.</li>
+                    </ul>
+                    <h4 class="text-xl font-semibold mb-2">Suggested Itinerary (4 Days)</h4>
+                    <ol class="list-decimal pl-5 mb-4">
+                        <li>Day 1: La Paz to Uyuni train.</li>
+                        <li>Day 2-3: 4x4 tour of flats and lagoons.</li>
+                        <li>Day 4: Return via desert.</li>
+                    </ol>
+                    <h4 class="text-xl font-semibold mb-2">Budget and Tips</h4>
+                    <p class="text-gray-600 mb-4">$60-100/day. Book tours in advance; drink coca tea for altitude.</p>
+                </article>
+                <article id="full-article-armenia">
+                    <h3 class="text-2xl font-semibold mb-4">Full Guide: Armenia: Wine, Monasteries, and Untold Stories</h3>
+                    <p class="text-gray-600 mb-4">Armenia's biblical landscapes and Areni wines are treasures. Condé Nast highlights 2025 festivals. Safe for tourists, with improving infrastructure.</p>
+                    <h4 class="text-xl font-semibold mb-2">Key Attractions</h4>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>Tatev Monastery: Cable car access.</li>
+                        <li>Areni Caves: Ancient wine press.</li>
+                        <li>Yerevan Cascade: Art and views.</li>
+                    </ul>
+                    <h4 class="text-xl font-semibold mb-2">Suggested Itinerary (4 Days)</h4>
+                    <ol class="list-decimal pl-5 mb-4">
+                        <li>Day 1: Yerevan sights.</li>
+                        <li>Day 2: Wine tasting in Areni.</li>
+                        <li>Day 3: Tatev day trip.</li>
+                        <li>Day 4: Markets and farewell.</li>
+                    </ol>
+                    <h4 class="text-xl font-semibold mb-2">Budget and Tips</h4>
+                    <p class="text-gray-600 mb-4">$40-70/day. Fly to Yerevan; try khachapuri.</p>
+                </article>
+                <article id="full-article-tajikistan">
+                    <h3 class="text-2xl font-semibold mb-4">Full Guide: Tajikistan's Fann Mountains: Raw High-Altitude Paradise</h3>
+                    <p class="text-gray-600 mb-4">Tajikistan's peaks rival the Alps, per National Geographic's 2025 picks. Remote but rewarding; visa on arrival for many.</p>
+                    <h4 class="text-xl font-semibold mb-2">Key Attractions</h4>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>Iskanderkul Lake: Turquoise gem.</li>
+                        <li>Pamir Highway: Epic drive.</li>
+                        <li>Alaudin Lakes: Multi-day treks.</li>
+                    </ul>
+                    <h4 class="text-xl font-semibold mb-2">Suggested Itinerary (5 Days)</h4>
+                    <ol class="list-decimal pl-5 mb-4">
+                        <li>Day 1: Dushanbe to Fann.</li>
+                        <li>Day 2-4: Lake hikes.</li>
+                        <li>Day 5: Highway section.</li>
+                    </ol>
+                    <h4 class="text-xl font-semibold mb-2">Budget and Tips</h4>
+                    <p class="text-gray-600 mb-4">$50-80/day. Hire local guides; pack for cold nights.</p>
                 </article>
             </div>
         </div>
@@ -332,8 +567,8 @@
                 <h3 class="text-2xl font-semibold mb-4">Sustainability Tracker</h3>
                 <p class="text-gray-600 mb-4">Estimate your trip's carbon footprint and get green tips.</p>
                 <div class="flex flex-col md:flex-row gap-4">
-                    <input type="number" id="flight-distance" placeholder="Flight distance (km)" class="p-2 border rounded flex-1 focus:ring-2 focus:ring-green-500">
-                    <select id="transport-type" class="p-2 border rounded flex-1 focus:ring-2 focus:ring-green-500">
+                    <input type="number" id="distance" placeholder="Distance (km)" class="p-2 border rounded flex-1 focus:ring-2 focus:ring-green-500" aria-label="Enter distance in km">
+                    <select id="transport-type" class="p-2 border rounded flex-1 focus:ring-2 focus:ring-green-500" aria-label="Select transport type">
                         <option value="flight">Flight</option>
                         <option value="train">Train</option>
                         <option value="car">Car</option>
@@ -372,55 +607,10 @@
                     </div>
                 </div>
                 <form id="forum-form" class="mt-6 flex gap-2">
-                    <input type="text" id="forum-input" placeholder="Share your story..." class="flex-1 p-2 border rounded focus:ring-2 focus:ring-indigo-500" required>
+                    <input type="text" id="forum-input" placeholder="Share your story..." class="flex-1 p-2 border rounded focus:ring-2 focus:ring-indigo-500" required aria-label="Post your comment">
                     <button type="submit" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition duration-300">Post</button>
                 </form>
                 <p class="mt-4 text-sm text-gray-500 italic">Premium members get unlimited posts and direct messaging.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Premium Section -->
-    <section id="premium" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-8">Unlock Premium for the Full Experience</h2>
-            <p class="text-center mb-12 text-gray-600">$9.99/month – Ad-free, exclusive guides, and more.</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                <div class="bg-indigo-50 p-6 rounded-lg text-center hover:shadow-md transition duration-300">
-                    <i class="fas fa-robot text-4xl text-indigo-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Personalized Recommendations</h3>
-                    <p class="text-gray-600">AI quizzes tailor itineraries to you.</p>
-                </div>
-                <div class="bg-indigo-50 p-6 rounded-lg text-center hover:shadow-md transition duration-300">
-                    <i class="fas fa-download text-4xl text-indigo-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Exclusive Downloads & VR Tours</h3>
-                    <p class="text-gray-600">PDF guides, 360° views, offline maps.</p>
-                </div>
-                <div class="bg-indigo-50 p-6 rounded-lg text-center hover:shadow-md transition duration-300">
-                    <i class="fas fa-percentage text-4xl text-indigo-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Booking Perks</h3>
-                    <p class="text-gray-600">10% off affiliates + cashback.</p>
-                </div>
-                <div class="bg-indigo-50 p-6 rounded-lg text-center hover:shadow-md transition duration-300">
-                    <i class="fas fa-comments text-4xl text-indigo-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Unlimited AI Chatbot</h3>
-                    <p class="text-gray-600">Ask for real-time tips anytime.</p>
-                </div>
-                <div class="bg-indigo-50 p-6 rounded-lg text-center hover:shadow-md transition duration-300">
-                    <i class="fas fa-users text-4xl text-indigo-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Private Community Access</h3>
-                    <p class="text-gray-600">Forums, events, travel buddies.</p>
-                </div>
-                <div class="bg-indigo-50 p-6 rounded-lg text-center hover:shadow-md transition duration-300">
-                    <i class="fas fa-bell text-4xl text-indigo-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Newsletter Priority</h3>
-                    <p class="text-gray-600">Flash deals and insider alerts.</p>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="#subscribe" class="inline-block px-8 py-4 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 text-lg transition duration-300">
-                    <i class="fas fa-crown mr-2"></i>Subscribe Now – Start Exploring!
-                </a>
             </div>
         </div>
     </section>
@@ -462,6 +652,9 @@
         </div>
     </footer>
 
+    <!-- Placeholder Modals for Login/Subscribe (Premium Feature) -->
+    <!-- Add JS for modals if needed, but for now, placeholders -->
+    
     <!-- JavaScript -->
     <script>
         // Dark Mode Toggle
@@ -471,11 +664,9 @@
             const isDark = document.body.classList.contains('dark-mode');
             toggle.textContent = isDark ? '☀️' : '🌙';
             toggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
-            // Save preference to localStorage
             localStorage.setItem('darkMode', isDark);
         });
 
-        // Check for saved dark mode preference
         if (localStorage.getItem('darkMode') === 'true') {
             document.body.classList.add('dark-mode');
             toggle.textContent = '☀️';
@@ -579,7 +770,6 @@
                 itineraryList.appendChild(li);
                 newDayInput.value = '';
                 
-                // Add drag events to new item
                 li.addEventListener('dragstart', (e) => {
                     draggedItem = e.target;
                     setTimeout(() => e.target.classList.add('dragging'), 0);
@@ -616,7 +806,6 @@
                 li.textContent = itemText;
                 itineraryList.appendChild(li);
                 
-                // Add drag events to loaded items
                 li.addEventListener('dragstart', (e) => {
                     draggedItem = e.target;
                     setTimeout(() => e.target.classList.add('dragging'), 0);
@@ -631,24 +820,23 @@
 
         // Sustainability Calculator
         const calculateBtn = document.getElementById('calculate-footprint');
-        const flightDistanceInput = document.getElementById('flight-distance');
+        const distanceInput = document.getElementById('distance');
         const transportTypeSelect = document.getElementById('transport-type');
         const footprintResult = document.getElementById('footprint-result');
         const footprintValue = document.getElementById('footprint-value');
         const footprintTip = document.getElementById('footprint-tip');
 
         calculateBtn.addEventListener('click', () => {
-            const distance = parseInt(flightDistanceInput.value) || 0;
+            const distance = parseInt(distanceInput.value) || 0;
             const transportType = transportTypeSelect.value;
             
             let footprint = 0;
             let level = '';
             let tip = '';
             
-            // Calculate based on transport type
             switch(transportType) {
                 case 'flight':
-                    footprint = (distance / 1000) * 0.25; // kg CO2 per km
+                    footprint = (distance / 1000) * 0.25;
                     break;
                 case 'train':
                     footprint = (distance / 1000) * 0.05;
@@ -661,7 +849,6 @@
                     break;
             }
             
-            // Determine level and tip
             if (footprint < 50) {
                 level = 'Low';
                 tip = 'Great choice! Consider offsetting with tree planting.';
@@ -698,7 +885,6 @@
                 forumPosts.prepend(postDiv);
                 forumInput.value = '';
                 
-                // Scroll to the new post
                 postDiv.scrollIntoView({ behavior: 'smooth' });
             }
         });
@@ -720,12 +906,6 @@
                 }
             });
         });
-
-        // Newsletter Signup Placeholder
-        console.log('Newsletter signup would integrate with Mailchimp or similar service');
-
-        // AI Chatbot Placeholder
-        console.log('Premium AI Chatbot: Ask me anything about travel!');
     </script>
 </body>
 </html>
